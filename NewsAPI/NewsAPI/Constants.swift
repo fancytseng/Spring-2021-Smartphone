@@ -7,6 +7,5 @@
 
 import Foundation
 
-let apiKey = "c4722e86e8594754981e12a060d6a3cd"
-//let apiURL = "http://newsapi.org/v2/top-headlines?"
-let apiURL = "http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey="
+let apiKey = "cb54a4c6c4044fa3ae60e3f134bc073d"
+let apiURL = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey="
