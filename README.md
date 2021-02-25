@@ -13,6 +13,8 @@ Spring 2021 Smartphone code
 
 [Link for Cities Weather Tableview with a Xib file](https://github.com/fancytseng/Spring-2021-Smartphone/tree/cities_weather)
 
+[Link for Getting News Title Data from Rest API's](https://github.com/fancytseng/Spring-2021-Smartphone/tree/main/NewsAPI)
+
 
 
 
