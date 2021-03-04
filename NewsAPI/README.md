@@ -4,9 +4,9 @@
 
 2. Remove the Default View controller and add a Table view controller on the storyboard
 
-3. Remove the View Controller class and add a new TableViewController class, Assign this class to the View controller in step 2. 
+3. Remove the View Controller class and add a new TableViewController class, Assign this class to the View controller in step 2
 
-4 Create an account at https://newsapi.org/ (Links to an external site.) and get API Key
+4. Create an account at https://newsapi.org/ (Links to an external site.) and get API Key
 
 5. When application starts up make a REST API call at http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=API_KEY with your api key. 
 
