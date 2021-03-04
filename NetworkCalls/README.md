@@ -2,9 +2,9 @@
 
 1. Add a table view controller on the Story board, Delete the Existing view controller, Make the tableView Controller as the startup controller.
 
-2. Add TableView controller class file and assign the class file to the View controller in step 1 .
+2. Add TableView controller class file and assign the class file to the View controller in step 1.
 
-3 Create a class for commodities which will have 2 properties Name and Price (string and float)
+3. Create a class for commodities which will have 2 properties Name and Price (string and float)
 
 4. Create a promise  function which will return an array of the commodity class 
 
