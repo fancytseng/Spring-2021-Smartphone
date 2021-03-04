@@ -15,6 +15,9 @@ Spring 2021 Smartphone code
 
 [Link for Getting News Title Data from Rest API's](https://github.com/fancytseng/Spring-2021-Smartphone/tree/main/NewsAPI)
 
+[Link for Newwork Calls + Promises](https://github.com/fancytseng/Spring-2021-Smartphone/tree/main/NetworkCalls)
+
+
 
 
 
