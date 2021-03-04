@@ -1,4 +1,4 @@
-Create an app which will do following things:
+# Create an app which will do following things:
 
 1. Add a table view controller on the Story board, Delete the Existing view controller, Make the tableView Controller as the startup controller.
 
