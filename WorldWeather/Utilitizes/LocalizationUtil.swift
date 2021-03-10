@@ -9,3 +9,6 @@ import Foundation
 
 var strHelloWorld = NSLocalizedString(hello_world, comment: "")
 
+func initializeText(){
+        
+    }
