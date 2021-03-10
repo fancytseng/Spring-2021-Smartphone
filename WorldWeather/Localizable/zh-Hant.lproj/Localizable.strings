@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  WorldWeather
+
+  Created by Fancy Tseng on 3/9/21.
+  
+*/
+
+"hello_world" = "你好，世界";
