@@ -16,6 +16,7 @@
 		FEAFF1AE25F870DD001E9635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAFF1AC25F870DD001E9635 /* LaunchScreen.storyboard */; };
 		FEAFF1C125F8716D001E9635 /* LocalizationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1C025F8716D001E9635 /* LocalizationUtil.swift */; };
 		FEAFF1C425F87182001E9635 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEAFF1C625F87182001E9635 /* Localizable.strings */; };
+		FEAFF1D625F87952001E9635 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1D525F87952001E9635 /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		FEAFF1C825F87186001E9635 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FEAFF1C925F87189001E9635 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FEAFF1CB25F87267001E9635 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		FEAFF1D525F87952001E9635 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FEAFF1C025F8716D001E9635 /* LocalizationUtil.swift */,
+				FEAFF1D525F87952001E9635 /* Services.swift */,
 			);
 			path = Utilitizes;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEAFF1D625F87952001E9635 /* Services.swift in Sources */,
 				FEAFF1C125F8716D001E9635 /* LocalizationUtil.swift in Sources */,
 				FEAFF1A625F870DC001E9635 /* ViewController.swift in Sources */,
 				FEAFF1A225F870DC001E9635 /* AppDelegate.swift in Sources */,
