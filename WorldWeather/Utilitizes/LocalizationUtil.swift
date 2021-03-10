@@ -7,8 +7,13 @@
 
 import Foundation
 
-var strHelloWorld = NSLocalizedString(hello_world, comment: "")
+var strHelloWorld = NSLocalizedString("hello_world", comment: "")
+var strWorldWeather = NSLocalizedString("world_weather", comment: "")
+
 
 func initializeText(){
         
     }
+
+
+
