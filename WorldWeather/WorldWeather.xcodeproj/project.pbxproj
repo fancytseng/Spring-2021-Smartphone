@@ -10,13 +10,19 @@
 		EE88629B3B719C7103D1FC88 /* Pods_WorldWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977875B7EFA887D265AE3855 /* Pods_WorldWeather.framework */; };
 		FEAFF1A225F870DC001E9635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1A125F870DC001E9635 /* AppDelegate.swift */; };
 		FEAFF1A425F870DC001E9635 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1A325F870DC001E9635 /* SceneDelegate.swift */; };
-		FEAFF1A625F870DC001E9635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1A525F870DC001E9635 /* ViewController.swift */; };
+		FEAFF1A625F870DC001E9635 /* WorldWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1A525F870DC001E9635 /* WorldWeatherViewController.swift */; };
 		FEAFF1A925F870DC001E9635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAFF1A725F870DC001E9635 /* Main.storyboard */; };
 		FEAFF1AB25F870DD001E9635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAFF1AA25F870DD001E9635 /* Assets.xcassets */; };
 		FEAFF1AE25F870DD001E9635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAFF1AC25F870DD001E9635 /* LaunchScreen.storyboard */; };
 		FEAFF1C125F8716D001E9635 /* LocalizationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1C025F8716D001E9635 /* LocalizationUtil.swift */; };
 		FEAFF1C425F87182001E9635 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEAFF1C625F87182001E9635 /* Localizable.strings */; };
 		FEAFF1D625F87952001E9635 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1D525F87952001E9635 /* Services.swift */; };
+		FEAFF1DA25F87D15001E9635 /* ModelCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1D925F87D15001E9635 /* ModelCity.swift */; };
+		FEAFF1DF25F87E78001E9635 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1DE25F87E78001E9635 /* Constants.swift */; };
+		FEAFF1E325F87E86001E9635 /* WorldWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1E225F87E86001E9635 /* WorldWeatherViewModel.swift */; };
+		FEAFF1E825F8813B001E9635 /* ModelCurrentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1E725F8813B001E9635 /* ModelCurrentCondition.swift */; };
+		FEAFF1EB25F884BB001E9635 /* ModelFiveDayForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1EA25F884BB001E9635 /* ModelFiveDayForecast.swift */; };
+		FEAFF1EE25F88782001E9635 /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFF1ED25F88782001E9635 /* UtilFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +32,7 @@
 		FEAFF19E25F870DC001E9635 /* WorldWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFF1A125F870DC001E9635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEAFF1A325F870DC001E9635 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEAFF1A525F870DC001E9635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEAFF1A525F870DC001E9635 /* WorldWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldWeatherViewController.swift; sourceTree = "<group>"; };
 		FEAFF1A825F870DC001E9635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEAFF1AA25F870DD001E9635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEAFF1AD25F870DD001E9635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +47,12 @@
 		FEAFF1C925F87189001E9635 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FEAFF1CB25F87267001E9635 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		FEAFF1D525F87952001E9635 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		FEAFF1D925F87D15001E9635 /* ModelCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCity.swift; sourceTree = "<group>"; };
+		FEAFF1DE25F87E78001E9635 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FEAFF1E225F87E86001E9635 /* WorldWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldWeatherViewModel.swift; sourceTree = "<group>"; };
+		FEAFF1E725F8813B001E9635 /* ModelCurrentCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCurrentCondition.swift; sourceTree = "<group>"; };
+		FEAFF1EA25F884BB001E9635 /* ModelFiveDayForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFiveDayForecast.swift; sourceTree = "<group>"; };
+		FEAFF1ED25F88782001E9635 /* UtilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +88,6 @@
 		FEAFF19525F870DC001E9635 = {
 			isa = PBXGroup;
 			children = (
-				FEAFF1BF25F87156001E9635 /* Utilitizes */,
-				FEAFF1BB25F87130001E9635 /* Localizable */,
 				FEAFF1A025F870DC001E9635 /* WorldWeather */,
 				FEAFF19F25F870DC001E9635 /* Products */,
 				120683E0C02F565070BD52BB /* Pods */,
@@ -96,9 +106,13 @@
 		FEAFF1A025F870DC001E9635 /* WorldWeather */ = {
 			isa = PBXGroup;
 			children = (
+				FEAFF1DD25F87E38001E9635 /* ViewModel */,
+				FEAFF1D825F87D07001E9635 /* Model */,
+				FEAFF1BF25F87156001E9635 /* Utilitizes */,
+				FEAFF1BB25F87130001E9635 /* Localizable */,
 				FEAFF1A125F870DC001E9635 /* AppDelegate.swift */,
 				FEAFF1A325F870DC001E9635 /* SceneDelegate.swift */,
-				FEAFF1A525F870DC001E9635 /* ViewController.swift */,
+				FEAFF1A525F870DC001E9635 /* WorldWeatherViewController.swift */,
 				FEAFF1A725F870DC001E9635 /* Main.storyboard */,
 				FEAFF1AA25F870DD001E9635 /* Assets.xcassets */,
 				FEAFF1AC25F870DD001E9635 /* LaunchScreen.storyboard */,
@@ -120,8 +134,28 @@
 			children = (
 				FEAFF1C025F8716D001E9635 /* LocalizationUtil.swift */,
 				FEAFF1D525F87952001E9635 /* Services.swift */,
+				FEAFF1DE25F87E78001E9635 /* Constants.swift */,
+				FEAFF1ED25F88782001E9635 /* UtilFunctions.swift */,
 			);
 			path = Utilitizes;
+			sourceTree = "<group>";
+		};
+		FEAFF1D825F87D07001E9635 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFF1D925F87D15001E9635 /* ModelCity.swift */,
+				FEAFF1E725F8813B001E9635 /* ModelCurrentCondition.swift */,
+				FEAFF1EA25F884BB001E9635 /* ModelFiveDayForecast.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEAFF1DD25F87E38001E9635 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFF1E225F87E86001E9635 /* WorldWeatherViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +277,14 @@
 			files = (
 				FEAFF1D625F87952001E9635 /* Services.swift in Sources */,
 				FEAFF1C125F8716D001E9635 /* LocalizationUtil.swift in Sources */,
-				FEAFF1A625F870DC001E9635 /* ViewController.swift in Sources */,
+				FEAFF1EB25F884BB001E9635 /* ModelFiveDayForecast.swift in Sources */,
+				FEAFF1A625F870DC001E9635 /* WorldWeatherViewController.swift in Sources */,
+				FEAFF1E325F87E86001E9635 /* WorldWeatherViewModel.swift in Sources */,
+				FEAFF1E825F8813B001E9635 /* ModelCurrentCondition.swift in Sources */,
 				FEAFF1A225F870DC001E9635 /* AppDelegate.swift in Sources */,
+				FEAFF1EE25F88782001E9635 /* UtilFunctions.swift in Sources */,
+				FEAFF1DF25F87E78001E9635 /* Constants.swift in Sources */,
+				FEAFF1DA25F87D15001E9635 /* ModelCity.swift in Sources */,
 				FEAFF1A425F870DC001E9635 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
