@@ -20,13 +20,11 @@ func getAFResponseJSONArray(_ url : String ) -> Promise<[JSON]>{
             // If there was an error we will reject the promise
             if response.error != nil {
                 seal.reject(response.error!)
-            }
-            
+            }            
             // get the JSON array and fulfill the promise
             let jsonArray: [JSON] = JSON(response.data).arrayValue
             seal.fulfill(jsonArray)
         }
-        
     }
 }
 

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class ModelCity{
     
     var cityKey : String = ""

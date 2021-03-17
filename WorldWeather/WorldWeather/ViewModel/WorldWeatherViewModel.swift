@@ -55,12 +55,12 @@ class WorldWeatherViewModel{
         }
     }
     
-    func getFiveDayConditions(_ url : String) -> Promise<ModelFiveDayForecast>{
-        return Promise<ModelFiveDayForecast> { seal -> Void in
+    func getOneDayConditions(_ url : String) -> Promise<ModelOneDayForecast>{
+        return Promise<ModelOneDayForecast> { seal -> Void in
             
             getAFResponseJSON(url).done { json in
                 
-                let dayForecast = ModelFiveDayForecast()
+                let dayForecast = ModelOneDayForecast()
                 dayForecast.headlineText = json["Headline"]["Text"].stringValue
                 dayForecast.nightTemp = json["DailyForecasts"][0]["Temperature"]["Minimum"]["Value"].intValue
                 dayForecast.dayTemp = json["DailyForecasts"][0]["Temperature"]["Maximum"]["Value"].intValue
@@ -78,4 +78,48 @@ class WorldWeatherViewModel{
             
         }
     }
+    
+    func getFiveDayConditions(_ url : String) -> Promise<[ModelFiveDayForecast]>{
+        return Promise<[ModelFiveDayForecast]> { seal -> Void in
+            
+            getAFResponseJSON(url).done { json in
+                
+                guard let jsonArray = json["DailyForecasts"].array else {return}
+                
+                var fiveDayForecast = [ModelFiveDayForecast]()
+                
+                for eachDay in jsonArray {
+                    let date = eachDay["Date"].stringValue
+                    let minTemp = eachDay["Temperature"]["Minimum"]["Value"].intValue
+                    let maxTemp = eachDay["Temperature"]["Maximum"]["Value"].intValue
+                    let maxIcon = eachDay["Day"]["Icon"].intValue
+                    let minIcon = eachDay["Night"]["Icon"].intValue
+                    let day = self.getDayOfWeek(date)!
+                    print(day)
+                    fiveDayForecast.append(ModelFiveDayForecast(date, maxTemp, minTemp, maxIcon, minIcon, day))
+                }
+
+                seal.fulfill(fiveDayForecast)
+            
+            }
+            .catch { error in
+                seal.reject(error)
+            }
+            
+        }
+    }
+    var dayArr : [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    
+    func getDayOfWeek(_ today:String) -> String? {
+            let formatter  = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ'"
+            
+            guard let todayDate = formatter.date(from: today) else { return "" }
+            
+            let myCalendar = Calendar(identifier: .gregorian)
+            let weekDay = myCalendar.component(.weekday, from: todayDate)
+            return dayArr[weekDay - 1]
+    }
+    
+    
 }

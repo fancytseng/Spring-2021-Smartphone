@@ -1,19 +1,27 @@
 //
-//  ModelOneDayForecast.swift
+//  ModelFiveDayForecast.swift
 //  WorldWeather
 //
-//  Created by Fancy Tseng on 3/9/21.
+//  Created by Fancy Tseng on 3/16/21.
 //
 
 import Foundation
 
 class ModelFiveDayForecast{
-    var headlineText = ""
-    var nightTemp = 0
-    var dayTemp = 0
-    var dayIcon = 0
-    var nightIcon = 0
-    var dayIconPhrase = ""
-    var nightIconPhrase = ""
-
+    
+    var date : String = ""
+    var maxTemp : Int = 0
+    var minTemp : Int = 0
+    var maxIcon : Int = 0
+    var minIcon : Int = 0
+    var day : String = ""
+    
+    init(_ date : String, _ maxTemp : Int, _ minTemp : Int, _ maxIcon : Int, _ minIcon : Int, _ day : String) {
+        self.date = date
+        self.maxTemp = maxTemp
+        self.minTemp = minTemp
+        self.maxIcon = maxIcon
+        self.minIcon = minIcon
+        self.day = day
+    }
 }

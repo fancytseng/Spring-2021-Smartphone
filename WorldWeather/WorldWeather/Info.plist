@@ -4,6 +4,11 @@
 <dict>
 	<key>NSLocationUsageDescription</key>
 	<string>Allow the user to actually get thelocation for this app</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

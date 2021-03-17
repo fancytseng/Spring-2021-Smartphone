@@ -22,6 +22,13 @@ func getCurrentConditionURL(_ cityKey : String) -> String{
     return url
 }
 
+func getOneDayURL(_ cityKey : String) -> String {
+    var url = oneDayURL
+    url.append(cityKey)
+    url.append("?apikey=\(apiKey)")
+    return url
+}
+
 func getFiveDayURL(_ cityKey : String) -> String {
     var url = fiveDayURL
     url.append(cityKey)
